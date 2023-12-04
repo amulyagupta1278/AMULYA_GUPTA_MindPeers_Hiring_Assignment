@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
         messageInput.value = '';   // Clear the input field
       }
     };
+
+    window.toggleChatPopup = () => {
+        const chatPopup = document.getElementById('chat-popup');
+        chatPopup.style.display = chatPopup.style.display === 'none' ? 'block' : 'none';
+      };
   
     
     socket.on('message', (data) => {    // Event listener for incoming messages
