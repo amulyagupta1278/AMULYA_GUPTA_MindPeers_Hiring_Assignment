@@ -45,3 +45,20 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+
+#chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
